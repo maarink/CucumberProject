@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="91.303">
+    <testcase classname="Customers" name="Add a new Customer" time="40.721">
+        <system-out><![CDATA[Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And The user has to fill email "admin@yourstore.com" and password "admin"...passed
+And Click on Login..........................................................passed
+Then User can view Dashboad.................................................passed
+When User click on customers Menu...........................................passed
+And Click on customers Menu Item............................................passed
+And Click on Add new button.................................................passed
+Then User can view Add new customer page....................................passed
+When User enter customer info...............................................passed
+And Click on Save button....................................................passed
+Then User can view confirmation message "The new customer has been added successfully.".passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Customers" name="Search customer By EmailId" time="18.969">
+        <system-out><![CDATA[Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And The user has to fill email "admin@yourstore.com" and password "admin"...passed
+And Click on Login..........................................................passed
+Then User can view Dashboad.................................................passed
+When User click on customers Menu...........................................passed
+And Click on customers Menu Item............................................passed
+And Enter customer MailId...................................................passed
+When Click on Search button.................................................passed
+Then User should found Email in the search table............................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Customers" name="Search customer By name" time="21.912">
+        <system-out><![CDATA[Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And The user has to fill email "admin@yourstore.com" and password "admin"...passed
+And Click on Login..........................................................passed
+Then User can view Dashboad.................................................passed
+When User click on customers Menu...........................................passed
+And Click on customers Menu Item............................................passed
+And Enter customer Firstname................................................passed
+And Enter customer Lasttname................................................passed
+When Click on Search button.................................................passed
+Then User should found name in the search table.............................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="login" name="successful login with valid credentials" time="9.542">
+        <system-out><![CDATA[Given User Launch Chrome browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/"...................passed
+And The user has to fill email "admin@yourstore.com" and password "admin"...passed
+And Click on Login..........................................................passed
+Then Page Title should be "Dashboard / nopCommerce administration"..........passed
+When User click on log out Link.............................................passed
+Then Page Title should be "Your store. Login"...............................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
